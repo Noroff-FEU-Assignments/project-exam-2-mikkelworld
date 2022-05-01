@@ -45,7 +45,8 @@ export default function HotelDetail() {
 			}
 		}
 		getData();
-	}, [router.isReady, router.query]);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
 
 	if (loading || (!error && !hotel)) {
 		return (

@@ -10,7 +10,8 @@ export default function RouterGuard({ children, redirect = "/" }) {
 
 	useEffect(() => {
 		if (!auth) router.push(redirect);
-	}, [redirect, router, router.isReady, auth]);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
 
 	if (auth) {
 		return children;

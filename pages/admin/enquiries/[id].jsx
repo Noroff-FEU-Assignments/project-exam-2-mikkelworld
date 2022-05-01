@@ -41,7 +41,8 @@ export default function Enquiry() {
 		}
 
 		getData();
-	}, [router.isReady, authRequest, router.query]);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [router.isReady]);
 
 	const deleteEnquiry = async () => {
 		const { id } = router.query;

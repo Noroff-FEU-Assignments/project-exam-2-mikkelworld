@@ -48,7 +48,8 @@ export default function EditHotel() {
 			}
 		}
 		getData();
-	}, [router.isReady, authRequest, router.query]);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [router.isReady]);
 
 	if (!isNewHotel && (isLoading || (!error && !hotel))) {
 		return <Spinner />;

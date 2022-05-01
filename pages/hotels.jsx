@@ -29,6 +29,7 @@ export default function Hotels() {
 			}
 		}
 		getData();
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	return (

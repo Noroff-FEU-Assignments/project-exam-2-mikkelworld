@@ -32,6 +32,7 @@ export default function Searchbar() {
 			}
 		}
 		getHotels();
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	// Handles change in search box

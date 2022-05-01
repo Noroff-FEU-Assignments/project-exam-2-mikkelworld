@@ -39,8 +39,10 @@ export default function Message() {
 				}
 			}
 		}
+
 		getData();
-	}, [router.isReady, authRequest, router.query]);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [router.isReady]);
 
 	const deleteMessage = async () => {
 		const { id } = router.query;

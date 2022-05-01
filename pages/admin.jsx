@@ -1,6 +1,3 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
-import { BASE_URL } from "../constants/api";
 import Head from "../components/Layout/Head";
 import Layout from "../components/Layout/Layout";
 import Heading from "../components/Shared/Heading";

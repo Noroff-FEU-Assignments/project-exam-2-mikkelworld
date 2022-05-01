@@ -31,7 +31,8 @@ export default function Enquiries() {
 		}
 
 		getData();
-	}, [authRequest]);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
 
 	return (
 		<RouterGuard redirect="/login">

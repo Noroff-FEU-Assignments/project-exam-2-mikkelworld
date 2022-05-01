@@ -30,7 +30,8 @@ export default function Enquiries() {
 			setLoading(false);
 		}
 		getData();
-	}, [authRequest]);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
 
 	return (
 		<RouterGuard redirect="/login">
