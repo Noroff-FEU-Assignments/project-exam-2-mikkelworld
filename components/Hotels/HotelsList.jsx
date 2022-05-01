@@ -12,7 +12,7 @@ export default function HotelsList({ hotels }) {
 						<Col xs={12} md={6} lg={6} xl={4} className="mb-4" key={id}>
 							<Link href={`/hotels/${attributes.slug}`} passHref>
 								<Card className="hotels-list__card">
-									<Card.Img variant="top" src={attributes.featuredImage.data.attributes.formats.medium.url} />
+									<Card.Img variant="top" src={attributes.featuredImage.data.attributes.url} />
 									<Card.Body>
 										<HotelTypeTag type={attributes.type} />
 										<Card.Title>{attributes.name}</Card.Title>

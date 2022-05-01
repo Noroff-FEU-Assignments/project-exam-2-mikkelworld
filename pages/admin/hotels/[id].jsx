@@ -29,7 +29,6 @@ export default function EditHotel() {
 				const { id } = router.query;
 
 				if (id === "create") {
-					// console.log("Creating new hotel");
 					setLoading(false);
 					setIsNewHotel(true);
 					return;
@@ -37,7 +36,6 @@ export default function EditHotel() {
 
 				try {
 					const res = await authRequest.get(`/api/hotels/${id}?populate=*`);
-					// console.log(res.data.data);
 					setHotel(res.data.data);
 				} catch (error) {
 					setHotel(null);

@@ -34,7 +34,6 @@ export default function HotelDetail() {
 
 				try {
 					const res = await axios.get(BASE_URL + `/api/hotels?filters[slug][$eq]=${slug}&populate=*`);
-					// console.log(res);
 					setHotel(res.data.data[0]);
 				} catch (error) {
 					console.log(error);

@@ -29,7 +29,6 @@ export default function Enquiry() {
 
 				try {
 					const res = await authRequest.get(`/api/enquiries/${id}?populate=*`);
-					// console.log(res.data.data);
 					setEnquiry(res.data.data);
 				} catch (error) {
 					setEnquiry(null);

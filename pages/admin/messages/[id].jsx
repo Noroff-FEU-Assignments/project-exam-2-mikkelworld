@@ -29,7 +29,6 @@ export default function Message() {
 
 				try {
 					const res = await authRequest.get(`/api/messages/${id}`);
-					// console.log(res.data.data);
 					setMessage(res.data.data);
 				} catch (error) {
 					setMessage(null);
