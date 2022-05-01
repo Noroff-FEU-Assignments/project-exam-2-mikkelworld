@@ -1,3 +1,7 @@
+# Note
+
+Please forgive the excessive loading time on first load. Heroku hibernates the website and API when it has been inactive for a while, so the first load is slow.
+
 # Admin login
 
 The login path is /login (it's also linked in the footer for the sake of whoever is marking this assignment)
