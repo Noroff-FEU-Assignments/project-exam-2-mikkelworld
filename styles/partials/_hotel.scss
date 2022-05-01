@@ -1,0 +1,14 @@
+.hotel-banner {
+	position: relative;
+	height: 250px;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	box-shadow: 0 3px 5px -2px #00000012, 0 7px 14px -5px #00000029;
+}
+
+@media only screen and (min-width: 992px) {
+	.hotel-banner {
+		height: 450px;
+		border-radius: 1.5rem;
+	}
+}

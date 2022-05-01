@@ -1,0 +1,45 @@
+@use "sass:color";
+
+.product-item {
+	position: relative;
+
+	a {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		cursor: pointer;
+		gap: 1rem;
+		background-color: #ffffff;
+		border-radius: 5px;
+		box-shadow: 0 0 10px -5px rgb(0 0 0 / 15%);
+		padding: 2rem;
+		border: 1px solid transparentize($color-primary, 0.5);
+		transition: 0.1s ease;
+
+		&:hover {
+			box-shadow: 0 0 20px -5px rgb(0 0 0 / 15%), inset 0px -80px 80px -80px rgb(186 104 200 / 50%);
+			border-color: $color-primary;
+			color: $color-text;
+		}
+
+		.title {
+			width: 100%;
+			margin: 0;
+			overflow: hidden;
+			white-space: nowrap;
+			font-weight: 700;
+			text-align: center;
+			text-overflow: ellipsis;
+		}
+
+		.price {
+			display: block;
+			margin: 0;
+			padding: 0.5rem 1rem;
+			color: white;
+			background-color: $color-primary;
+			border-radius: 50px;
+		}
+	}
+}

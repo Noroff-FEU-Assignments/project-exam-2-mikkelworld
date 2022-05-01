@@ -1,0 +1,58 @@
+// Colors
+$color-background: #f9f9f9;
+$color-text: #252525;
+$color-primary: #673ab7;
+$color-primary-dark: #4f2c8f;
+$color-contrast: #353535;
+
+// Bootstrap overrides
+$primary: $color-primary;
+$theme-colors: (
+	"primary": $color-primary,
+	"info": #0d6efd,
+	"danger": #dc3545,
+	"success": #12d132,
+);
+
+// Override alerts
+$alert-border-scale: -50%;
+
+// Override modals
+$modal-content-border-radius: 0.5rem;
+$modal-content-border-width: 0px;
+
+// Bootstrap
+@import "bootstrap";
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/reboot";
+
+// Fonts
+$font-primary: "Open Sans", sans-serif;
+$font-headers: "Poppins", sans-serif;
+
+body {
+	margin: 0;
+	background-color: $color-background;
+	color: $color-text;
+
+	div#__next {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+
+		main {
+			flex: 1;
+		}
+	}
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}

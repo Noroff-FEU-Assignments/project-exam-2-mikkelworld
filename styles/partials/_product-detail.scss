@@ -1,0 +1,12 @@
+.product-detail {
+	.product-image {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 2rem;
+		border: 1px solid #ebebeb;
+		border-radius: 5px;
+		box-shadow: 0 0 10px 0px rgb(0 0 0 / 15%);
+		background-color: #ffffff;
+	}
+}

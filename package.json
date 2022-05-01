@@ -1,0 +1,33 @@
+{
+	"name": "project-exam-2-mikkelworld",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^6.1.1",
+		"@fortawesome/free-brands-svg-icons": "^6.1.1",
+		"@fortawesome/free-solid-svg-icons": "^6.1.1",
+		"@fortawesome/react-fontawesome": "^0.1.18",
+		"@hookform/resolvers": "^2.8.8",
+		"axios": "^0.26.0",
+		"bootstrap": "^5.1.3",
+		"next": "12.1.0",
+		"react": "17.0.2",
+		"react-bootstrap": "^2.1.2",
+		"react-dom": "17.0.2",
+		"react-hook-form": "^7.30.0",
+		"react-markdown": "^8.0.3",
+		"sass": "^1.49.9",
+		"sharp": "^0.30.4",
+		"yup": "^0.32.11"
+	},
+	"devDependencies": {
+		"eslint": "8.10.0",
+		"eslint-config-next": "12.1.0"
+	}
+}

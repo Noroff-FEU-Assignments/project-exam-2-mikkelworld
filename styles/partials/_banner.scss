@@ -1,0 +1,39 @@
+.banner {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0.25rem;
+
+	img {
+		object-position: center;
+	}
+
+	.banner-text {
+		position: relative;
+
+		background: rgb(103 58 183);
+		padding: 1.5rem;
+		backdrop-filter: blur(20px);
+		color: white;
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.banner {
+		img {
+			object-position: center -395px;
+		}
+
+		.banner-text {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+	}
+}

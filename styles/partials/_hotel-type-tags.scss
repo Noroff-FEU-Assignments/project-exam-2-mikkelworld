@@ -1,0 +1,14 @@
+.hotel-type-tag {
+	margin-bottom: 0.5rem;
+
+	svg {
+		color: $color-primary;
+		margin-right: 0.25rem;
+	}
+
+	span {
+		font-size: 14px;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+}
