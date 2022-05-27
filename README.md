@@ -18,9 +18,13 @@ The website consists of the following pages:
 -   Admin pages
 
 The hotels are fetched from a publicly hosted Strapi API.
+
 On the Home and Hotels page, the user can use the typeahead search bar to quickly find specific hotels.
+
 For each hotel details page, the user can send an inquiry to the hotel to ask any questions they may have. These inquiries can be managed by the administrator once logged in.
+
 The contact page uses form validation and saves all messages to a dedicated collection in the admin section, where the admin can manage them.
+
 In addition to the hotel inquiries and messages, logged in administrators can also manage and create new establishments which will then be visible to the users on the hotels page.
 
 ## Built With
